@@ -22,6 +22,6 @@ public class Word {
     private int count;
 
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "page_id", updatable = false)
+    @JoinColumn(name = "page_id", updatable = false, nullable = false)
     private Page page;
 }
