@@ -26,6 +26,9 @@ dependencies {
     runtimeOnly 'org.postgresql:postgresql'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'io.springfox:springfox-boot-starter'
+    implementation 'org.apache.commons:commons-lang3'
+    implementation 'org.modelmapper:modelmapper'
 }
 
 test {
