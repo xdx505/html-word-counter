@@ -8,8 +8,6 @@ gradle/
 gradlew.bat
 gradlew
 
-src/test/
-
 ### STS ###
 .apt_generated
 .classpath
