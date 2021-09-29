@@ -36,6 +36,7 @@ dependencies {
     implementation 'org.apache.commons:commons-lang3'
     implementation "org.modelmapper:modelmapper:$modelmapper"
     implementation "net.sourceforge.htmlunit:htmlunit:$htmlunit"
+    testImplementation 'net.sourceforge.htmlunit:webdriver:2.6'
 }
 
 test {
