@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.xdx505.wordcounter.data.dto.PageDto;
 import ru.xdx505.wordcounter.data.dto.WordDto;
-import ru.xdx505.wordcounter.data.model.Page;
+import ru.xdx505.wordcounter.data.model.WebPage;
 import ru.xdx505.wordcounter.data.model.Word;
 import ru.xdx505.wordcounter.data.repository.WordRepository;
 import ru.xdx505.wordcounter.mapper.MappingHelper;
@@ -37,7 +37,7 @@ public class WordServiceImpl implements WordService {
         var wordEntity = new Word();
         wordEntity.setWord(word);
         wordEntity.setCount(count);
-        wordEntity.setPage(mappingHelper.map(page, Page.class));
+        wordEntity.setPage(mappingHelper.map(page, WebPage.class));
         var savedWordEntity = save(wordEntity);
         return mappingHelper.map(savedWordEntity, WordDto.class);
     }

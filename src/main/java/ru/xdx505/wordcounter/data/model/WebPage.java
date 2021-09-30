@@ -21,7 +21,7 @@ import java.util.Collection;
 @Entity
 @Table(name = "page", schema = "public")
 @EntityListeners(AuditingEntityListener.class)
-public class Page {
+public class WebPage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

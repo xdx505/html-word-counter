@@ -52,7 +52,7 @@ public class ComparingServiceImpl implements ComparingService {
                 .sorted(Comparator.comparing(WordResponseDto::getCount).reversed().thenComparing(WordResponseDto::getWord))
                 .collect(Collectors.toList());
         var pageResponseDto = mappingHelper.map(pageDto, PageResponseDto.class);
-        pageResponseDto.setWordCount(wordsList.size());
+        pageResponseDto.setUniqueWordsCount(wordsList.size());
         pageResponseDto.setWords(wordsList);
         return pageResponseDto;
     }

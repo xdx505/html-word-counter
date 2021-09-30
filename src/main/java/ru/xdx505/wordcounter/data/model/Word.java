@@ -23,5 +23,5 @@ public class Word {
 
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     @JoinColumn(name = "page_id", updatable = false, nullable = false)
-    private Page page;
+    private WebPage page;
 }
